@@ -17,6 +17,24 @@ namespace Libra.Services
             this.db = db;
         }
 
-       
+        public List<Employee> GetEmployees()
+        {
+            return db.Employees.ToList();
+        }
+
+        public List<Inventory> GetInventories()
+        {
+            return db.Inventories.ToList();
+        }
+
+        public List<Stock> GetStocks()
+        {
+            return db.Stocks.ToList();
+        }
+
+        public List<Warehouse> GetWarehouses()
+        {
+            return db.Warehouses.ToList();
+        }
     }
 }

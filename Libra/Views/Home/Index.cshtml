@@ -3,7 +3,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Libra Stock Manager</h1>
+    <h1 class="display-4">Libra Stock Manager </h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
@@ -13,7 +13,7 @@
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Inventory Count</h5>
-                <h1 class="card-text text-danger font-weight-bolder mb-2">25</h1>
+                <h1 class="card-text text-danger font-weight-bolder mb-2">@ViewBag.Inventory</h1>
                 <a class="btn btn-primary btn-sm" asp-area="" asp-controller="Inventories" asp-action="Index">View</a> <a class="btn btn-success btn-sm" asp-area="" asp-controller="Inventories" asp-action="Create">Add</a>
                 <p class="card-text mt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -22,8 +22,8 @@
     <div class="col-sm-3">
         <div class="card text-center">
             <div class="card-body">
-                <h5 class="card-title">Warehouse</h5>
-                <h1 class="card-text text-danger font-weight-bolder mb-2">25</h1>
+                <h5 class="card-title">Locations</h5>
+                <h1 class="card-text text-danger font-weight-bolder mb-2">@ViewBag.Warehouse</h1>
                 <a class="btn btn-primary btn-sm" asp-area="" asp-controller="warehouses" asp-action="Index">View</a> <a class="btn btn-success btn-sm" asp-area="" asp-controller="warehouses" asp-action="Create">Add</a>
                 <p class="card-text mt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -33,7 +33,7 @@
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Employees</h5>
-                <h1 class="card-text text-danger font-weight-bolder mb-2">25</h1>
+                <h1 class="card-text text-danger font-weight-bolder mb-2">@ViewBag.Employee</h1>
                 <a class="btn btn-primary btn-sm" asp-area="" asp-controller="employees" asp-action="Index">View</a> <a class="btn btn-success btn-sm" asp-area="" asp-controller="employees" asp-action="Create">Add</a>
                 <p class="card-text mt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -43,7 +43,7 @@
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">Stocks</h5>
-                <h1 class="card-text text-danger font-weight-bolder mb-2">25</h1>
+                <h1 class="card-text text-danger font-weight-bolder mb-2">@ViewBag.Stocks</h1>
                 <a class="btn btn-primary btn-sm" asp-area="" asp-controller="stocks" asp-action="Index">View</a> <a class="btn btn-success btn-sm" asp-area="" asp-controller="stocks" asp-action="Create">Add</a>
                 <p class="card-text mt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
